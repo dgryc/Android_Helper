@@ -1,0 +1,385 @@
+; Lenovo Virtual Serial Port Setup File
+; Lenovo Group Limited
+;
+
+[Version]
+signature  = "$WINDOWS NT$"
+Class      = Ports
+Provider   = %LENOVO%
+ClassGuid  = {4D36E978-E325-11CE-BFC1-08002BE10318}
+; month/day/year
+DriverVer  = 06/05/2014,2.0.9.6    
+Catalogfile= leser.cat
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Manufacturer]
+%LENOVO% = LenovoSerialPort, NTx86, NTamd64
+
+[SourceDisksNames.x86]
+1000 = %LenovoSrcDisk%,"",,\serial\i386
+
+[SourceDisksNames.amd64]
+1000 = %LenovoSrcDisk%,"",,\serial\amd64
+
+[SourceDisksFiles]
+  leusbser.sys = 1000
+
+[LenovoSerialPort.NTx86]
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB history NTx86;;;;;;;;;;;;;;;;;;;;;;;; 
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_74F3&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_74F3&MI_02
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_74F3&MI_03
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_74F4&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_74F4&MI_03
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_74F4&MI_04
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_74F5&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_74F5&MI_03
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_74F5&MI_04
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_74F6&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_74F6&MI_03
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_74F6&MI_04
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_74F8&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_74F8&MI_04
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_74F8&MI_05
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_74F9&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_74F9&MI_04
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_74F9&MI_05
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_74FF&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_74FF&MI_04
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_74FF&MI_05
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7500&MI_03
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7500&MI_05
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_7500&MI_06
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7502&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7502&MI_02
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_7502&MI_03
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7509&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7509&MI_04
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_7509&MI_05
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_750A&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_750A&MI_04
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_750A&MI_05
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_750B&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_750B&MI_03
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_750B&MI_04
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_750C&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_750C&MI_03
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_750C&MI_04
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_750D&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_750D&MI_04
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_750E&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_750E&MI_04
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_750F&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_750F&MI_03
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7510&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7510&MI_03
+%LeDeviceDiag%  = LportInstall00, USB\VID_05C6&PID_0001&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_05C6&PID_0001&MI_03
+%LeDeviceTEST%  = LportInstall00, USB\VID_05C6&PID_0001&MI_04
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB history end NTx86;;;;;;;;;;;;;;;;;;;;;;;; 
+
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Factory NTx86;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+;; Shellw rndis,diag,adb
+%LeDeviceDiag%  = LportInstall00, USB\VID_05C6&PID_902D&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_05C6&PID_902D&MI_05
+; ; Shellw rndis,diag
+%LeDeviceDiag%  = LportInstall00, USB\VID_05C6&PID_902C&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_05C6&PID_902C&MI_04
+;;Qualcomm common
+%QcomDevice90080%  = LportInstall00, USB\VID_05C6&PID_9008
+%QcomDevice90060%  = LportInstall00, USB\VID_05C6&PID_9006&MI_00
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Factory end NTx86;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB generic NTx86;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+;generic adb,diag,modem,nmea
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7501&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7501&MI_03
+;generic diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7512&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7512&MI_02
+;generic adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7513&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7513&MI_03
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB generic end NTx86;;;;;;;;;;;;;;;;;;;;;;;;; 
+      
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Project NTx86;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; K910 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7711&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7711&MI_02
+; K910 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7710&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7710&MI_03
+; A7800 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7774&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7774&MI_02
+; A7800 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7775&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7775&MI_03
+; B8080 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7768&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7768&MI_02
+; B8080 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7769&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7769&MI_03
+; K910 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7781&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7781&MI_02
+; K910 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7780&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7780&MI_03
+; K920 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_778D&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_778D&MI_02
+; K920 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_778C&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_778C&MI_03
+; Z2 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_77E9&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_77E9&MI_02
+; Z2 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_77E8&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_77E8&MI_03
+; Airplay diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_77F1&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_77F1&MI_02
+; Airplay adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_77F0&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_77F0&MI_03
+; Sisley diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7801&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7801&MI_02
+; Sisley adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7800&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7800&MI_03
+; S7 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_77F9&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_77F9&MI_02
+; S7 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_77F8&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_77F8&MI_03
+; A690e diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7809&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7809&MI_02
+; A690e adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7808&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7808&MI_03
+; S580 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7811&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7811&MI_02
+; S580 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7810&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7810&MI_03
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Project end NTx86;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[LenovoSerialPort.NTamd64]
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB history NTamd64;;;;;;;;;;;;;;;;;;;;;;;; 
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_74F3&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_74F3&MI_02
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_74F3&MI_03
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_74F4&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_74F4&MI_03
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_74F4&MI_04
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_74F5&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_74F5&MI_03
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_74F5&MI_04
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_74F6&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_74F6&MI_03
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_74F6&MI_04
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_74F8&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_74F8&MI_04
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_74F8&MI_05
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_74F9&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_74F9&MI_04
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_74F9&MI_05
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_74FF&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_74FF&MI_04
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_74FF&MI_05
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7500&MI_03
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7500&MI_05
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_7500&MI_06
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7502&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7502&MI_02
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_7502&MI_03
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7509&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7509&MI_04
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_7509&MI_05
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_750A&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_750A&MI_04
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_750A&MI_05
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_750B&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_750B&MI_03
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_750B&MI_04
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_750C&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_750C&MI_03
+%LeDevicePCUI%  = LportInstall00, USB\VID_17EF&PID_750C&MI_04
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_750D&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_750D&MI_04
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_750E&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_750E&MI_04
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_750F&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_750F&MI_03
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7510&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7510&MI_03
+%LeDeviceDiag%  = LportInstall00, USB\VID_05C6&PID_0001&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_05C6&PID_0001&MI_03
+%LeDeviceTEST%  = LportInstall00, USB\VID_05C6&PID_0001&MI_04
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB history end NTamd64;;;;;;;;;;;;;;;;;;;;;;;; 
+
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Factory NTamd64;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+;; Shellw rndis,diag,adb
+%LeDeviceDiag%  = LportInstall00, USB\VID_05C6&PID_902D&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_05C6&PID_902D&MI_05
+; ; Shellw rndis,diag
+%LeDeviceDiag%  = LportInstall00, USB\VID_05C6&PID_902C&MI_02
+%LeDeviceNMEA%  = LportInstall00, USB\VID_05C6&PID_902C&MI_04
+;;Qualcomm common
+%QcomDevice90080%  = LportInstall00, USB\VID_05C6&PID_9008
+%QcomDevice90060%  = LportInstall00, USB\VID_05C6&PID_9006&MI_00
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Factory end NTamd64;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB generic NTamd64;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+;generic adb,diag,modem,nmea
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7501&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7501&MI_03
+;generic diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7512&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7512&MI_02
+;generic adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7513&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7513&MI_03
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB generic end NTamd64;;;;;;;;;;;;;;;;;;;;;;;;; 
+      
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Project NTamd64;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; K910 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7711&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7711&MI_02
+; K910 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7710&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7710&MI_03
+; A7800 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7774&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7774&MI_02
+; A7800 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7775&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7775&MI_03
+; B8080 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7768&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7768&MI_02
+; B8080 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7769&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7769&MI_03
+; K910 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7781&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7781&MI_02
+; K910 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7780&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7780&MI_03
+; K920 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_778D&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_778D&MI_02
+; K920 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_778C&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_778C&MI_03
+; Z2 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_77E9&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_77E9&MI_02
+; Z2 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_77E8&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_77E8&MI_03
+; Airplay diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_77F1&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_77F1&MI_02
+; Airplay adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_77F0&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_77F0&MI_03
+; Sisley diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7801&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7801&MI_02
+; Sisley adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7800&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7800&MI_03
+; S7 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_77F9&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_77F9&MI_02
+; S7 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_77F8&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_77F8&MI_03
+; A690e diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7809&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7809&MI_02
+; A690e adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7808&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7808&MI_03
+; S580 diag,modem,nmea,mass_storage	
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7811&MI_00
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7811&MI_02
+; S580 adb,diag,modem,nmea,mass_storage
+%LeDeviceDiag%  = LportInstall00, USB\VID_17EF&PID_7810&MI_01
+%LeDeviceNMEA%  = LportInstall00, USB\VID_17EF&PID_7810&MI_03
+;;;;;;;;;;;;;;;;;;;;;;Lenovo USB Project end NTamd64;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+
+[LportInstall00.NT]
+CopyFiles=LeUsbDriverFiles
+AddReg = All00, AddReg
+
+[LportInstall01.NT]
+CopyFiles=LeUsbDriverFiles
+AddReg = All00, AddReg, DevFunction1
+
+[LportInstall02.NT]
+CopyFiles=LeUsbDriverFiles
+AddReg = All00, AddReg, DevFunction2
+
+[LeUsbDriverFiles]
+leusbser.sys
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[LportInstall00.NT.Services]
+AddService=leusbser,  0x00000002, Le_USBSerialService
+
+[LportInstall01.NT.Services]
+AddService=leusbser,  0x00000002, Le_USBSerialService
+
+[LportInstall02.NT.Services]
+AddService=leusbser,  0x00000002, Le_USBSerialService
+
+[Le_USBSerialService]
+DisplayName   = %LEUSBSER.Desc%
+ServiceType   = 1
+StartType     = 3
+ErrorControl  = 1
+ServiceBinary = %12%\leusbser.sys
+
+[All00]
+HKR,,NTMPDriver,,leusbser.sys
+
+[DevFunction1]
+HKR,,LeDeviceFunction,0x00010001,1
+
+[DevFunction2]
+HKR,,LeDeviceFunction,0x00010001,2
+
+[AddReg]
+HKR,,PortSubClass,1,01
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+;HKLM,SYSTEM\CurrentControlSet\Control\UsbFlags,IgnoreHWSerNum17EF9999,1,1
+
+[Strings]
+LEUSBSER.Desc = "Lenovo Inc. USB Device Serial Communication"
+LenovoSrcDisk = "LENOVO USB Driver Disk"
+LENOVO   = "Lenovo Inc."
+LeDeviceDiag = "Lenovo HS-USB Diagnostics"
+LeDeviceNMEA = "Lenovo HS-USB NMEA"
+LeDevicePCUI = "Lenovo HS-USB PCUI"
+LeDeviceTEST = "Lenovo test mode Interface"
+QcomDevice90060 = "Qualcomm HS-USB Diagnostics 9006"
+QcomDevice90080 = "Qualcomm HS-USB QDLoader 9008"
+
+
